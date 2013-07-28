@@ -162,5 +162,6 @@ def create_new_project(request, user_name):
         'project/createpage.html',
 
         {
+            'UserName':user_name,
         }
     )
