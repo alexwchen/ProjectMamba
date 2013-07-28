@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='/static_media_alex/JQ_Css/smoothness/jquery-ui-1.8.16.custom.css'>
+		<link rel='stylesheet' type='text/css' href='/static_media_alex/project/project_ranking_page.css'>
+		{% include "header.html" %}
+	</head>
+	<body>
+		<div id ='portfolio_main_container' class='div_portfolio_main_container'>
+			<div id='portfolio_tabs_bar'>
+				<ul>
+					<li><a href = "#ALL">PROJECTS</a></li>
+				</ul>
+
+<!-- **************************** -->
+<!-- Machine Learning Starts Here -->
+<!-- **************************** -->
+
+				<div id="ALL">
+
+					<div id = "portfolio_filter_main_container" class='div_portfolio_filter_main_container'>
+
+						{# Drop Down Menus #}
+						
+						<div id = 'select_drapdown_container' class = 'div_select_drapdown_container'>
+							<select style='font-size: 0.8em;' ame='select_category' id='select_ranking'>
+								<option value='1'>Best</option>
+								<!--<option value='2'>Recommend For You</option>-->
+								<option value='3'>Most Recent</option>
+								<option value='4'>Less Recent</option>
+							</select>
+						</div>
+						<div id = 'select_drapdown_container' class = 'div_select_drapdown_container'>
+							<p class='font_filter_title'> Sort: </p>
+						</div>
+					</div>
+
+					<div id = "portfolio_tabs_frame" class='div_portfolio_tabs_frame'>
+						{% for project in AllProj %}
+							<div id = 'portfolio_rank_frame{{project.id}}' 
+							class='div_portfolio_rank_frame' 
+							onclick=location.href='/{{ UserName }}/projects/{{project.link}}' data-click='{{project.link}}'>
+								
+									{# arrow + rank container #}
+									<div id = 'div_portfolio_left_rank_frame' class='div_portfolio_left_rank_frame'>								
+
+										{# arrow up - not used: now is just for spacing #}
+										<div id = 'div_portfolio_arrow_frame' class='div_portfolio_rank_number_spacing_frame'>
+										</div>
+
+										{# rank number display #}
+										<div id = 'div_portfolio_rank_number' class='div_portfolio_rank_number'>
+											<p id='font_portfolio_rank_number{{project.id}}' class='font_portfolio_rank_number'>{{ forloop.counter }}</p>
+										</div>
+
+										{# arrow down - not used: now is just for spacing #}
+										<div id = 'div_portfolio_arrow_frame' class='div_portfolio_rank_number_spacing_frame'>
+										</div>
+									</div>
+								
+								
+									{# project photo display #}
+									<div id = 'portfolio_project_photo_display' class='div_portfolio_project_photo_display'>
+										<img class='img_display_size' src='/static_media_alex/Images/{{project.rank_img}}' />
+									</div>
+									
+									<div id = 'portfolio_color_rank_frame' class='div_portfolio_color_rank_frame'>
+
+										{# Like #}
+										{% load rankProj_extras %}
+										<div id = 'div_portfolio_like_frame' class='div_portfolio_like_frame'>
+											
+											<div id = 'div_portfolio_like_space_frame' class='div_portfolio_like_space_frame'>
+											</div>	
+											<img class='img_arrow_display_size' src='/static_media_alex/Images/like_button.jpg' data-click='{{project.link}}'/>
+										</div>			
+									
+										{# project title #}
+										<div id = 'portfolio_project_title' class='div_portfolio_project_title'>
+											<p class='font_portfolio_project_title'> {{project.title}}</p>										
+										</div>
+																		
+										{# short description #}
+										<div id = 'div_portfolio_project_description' class='div_portfolio_project_description'>
+											<p class='font_portfolio_project_description'>{{project.complete_date}}<br>{{project.short_description}}</p>
+										</div>
+										
+									</div>	
+							</div>
+						{% endfor %}						
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+		<script type='text/javascript' src="/static_media_alex/JQ_Lib/jquery.js"></script>
+		<script type='text/javascript' src="/static_media_alex/JQ_Lib/jquery-ui.js"></script>
+		<script type='text/javascript' src="/static_media_alex/project/project_ranking_page.js"></script>
+		<script src="/static_media_alex/JQ_Lib/jquery.ui.core.js"></script>
+		<script src="/static_media_alex/JQ_Lib/jquery.effects.slide.js"></script>
+		<script src="/static_media_alex/JQ_Lib/jquery.ui.widget.js"></script>
+		<script src="/static_media_alex/JQ_Lib/jquery.ui.button.js"></script>
+		{% include "footer.html" %}
+	</body>
+</html>

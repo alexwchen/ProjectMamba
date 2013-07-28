@@ -1,0 +1,421 @@
+<html>
+	<head>
+		{% include "header.html" %}
+		<link rel="stylesheet" type="text/css" href="/static_media_alex/project/createPage.css" />
+	</head>
+    <body>
+		<div id='porj_tmep_main_container' class = 'div_porj_tmep_main_container'>
+			{# Middle Container Starts Here #}
+			<div id = 'middle_container' class = 'div_middle_container'>
+
+				{# Space - used for spacing #}
+				<div id = 'top_buffer_container' class = 'div_top_buffer_container' >
+				</div>
+				
+				{# Project Title + Authors #}
+				<div id = 'top_title_container' class = 'div_top_title_container' >	
+					<p id="top_title"class = 'font_middle_portfolio_publication_title'>
+						<b>
+							<input type="text" name="Bold title" class="input_portfolio_title_box" placeholder="Project Title...">
+						</b>
+					</p>
+					<p id="preview_top_title" class = 'font_middle_portfolio_publication_title'>
+						<b></b>
+					</p>
+					<p id="top_author" class = 'font_middle_portfolio_publication_description'>
+						<input type="text" name="author" class="input_portfolio_author_box" placeholder="Project Author...">
+					</p>
+					<p id="preview_top_author" class = 'font_middle_portfolio_publication_description'></p>
+				</div>
+				
+				{% if project.video_url != 'none' %}
+					{# Video Youtube #}
+					<div id = 'middle_bigblock_container' class='div_middle_bigblock_container'>
+						<div id = 'middle_title_container' class = 'div_middle_title_container' >
+							<div id = 'middle_image_container' class = 'div_middle_image_container'>
+								<img width='60' height='60' src='/static_media_alex/Images/icon_video.jpg'>
+							</div>
+							<div id = 'middle_sectional_title' class = 'div_middle_sectional_title'>
+								<p class = 'font_middle_title'> Video Demonstration</p>
+							</div>	
+							{% if project.PDF != 'none' %}
+								<div id = 'pdf_download_container' class='div_pdf_download_container'>
+									<a href = "/static_media_alex/Images/{{project.PDF}}">
+										<img width='50' height='50' src='/static_media_alex/Images/icon_pdf.jpg'>
+									</a>
+								</div>
+							{% endif %}
+						</div>
+						<div id = 'display_main_container' class = 'div_display_main_container video_section_box_outline'>
+							<header class="video_header">
+								<form>
+									<textarea rows="3" cols="47" type="url" name="video link" class="video_url_input_box" placeholder="Example: <iframe width='560' height='315' src='//www.youtube.com/embed/6UP1eFSPfOw' frameborder='0' allowfullscreen></iframe>"></textarea>
+									<div class="video_example_url_box"></div>
+								</form>
+							</header>
+							<!-- <img width="720" height="450" src="/static_media_alex/Images/jp_talk_video_demo.jpg"> -->
+							<!-- <iframe width="720" height="450" src="{{ project.video_url }}" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
+						</div>						
+					</div>
+				{% endif %}
+				<!-- 
+					This section motivation
+					include title, content, image
+				 -->
+				{# Motivation Section #}
+				{% load rankProj_extras %}
+				<div id = 'middle_bigblock_container' class='div_middle_bigblock_container'>
+					<div id = 'middle_title_container' class = 'div_middle_title_container' >
+						<div id = 'middle_image_container' class = 'div_middle_image_container'>
+							<img width='60' height='60' src='/static_media_alex/Images/icon_motivation.jpg'>
+						</div>
+						<div id = 'middle_sectional_title' class = 'div_middle_sectional_title'>
+							<p class = 'font_middle_title'> Motivation</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="big_frame_motivation">
+					<!-- Motivation -->
+					<div id = 'motivation' class="motivation_seperate_box">
+						<div class='div_display_main_container'>
+							{# Motivation Content #}												
+							<div id = 'left_text_container' class='div_left_text_container'>
+								<textarea rows="12" cols="46" type="text" name="motivation content" class="forms_content_input_box" placeholder="Type your content..."></textarea>
+							</div>
+							{# Motivation Images #}	
+							<div id = 'right_img_container' class='div_right_img_container' style="margin-left: 15px">
+								<img width='280' height='200' src='/static_media_alex/Images/createpage_project_jp_talk_motivation_demo.jpg'>
+							</div>
+						</div>
+						<!-- preview button -->
+						<button class="preview_button">Preview</button>
+					</div>
+					<!-- Motivation preview -->
+					<div id='motivation_preview'>
+						<div  class='div_display_main_container_preview'>
+							<div  class='div_all_text_container_preview'>
+								<div class='div_display_main_container_preview'>
+									<div class='div_left_sectional_text_container_preview'>
+										<p class='font_middle_portfolio_publication_description_preview'></p>
+									</div>
+									<div class='div_right_img_container_preview'>
+										<img width='280' height='200' src=''>
+									</div>
+								</div>											
+							</div>
+						</div>
+						<button class="edit_button">Edit</button>	
+					</div>
+				</div>
+				
+				
+				<!--
+					This section handle features
+					# form1 - form5
+				-->
+				{# Feature Section #}
+				<div id = 'middle_bigblock_container' class='div_middle_bigblock_container'>
+					<div id = 'middle_title_container' class = 'div_middle_title_container' >
+						<div id = 'middle_image_container' class = 'div_middle_image_container'>
+							<img width='60' height='60' src='/static_media_alex/Images/icon_feature.jpg'>
+						</div>
+						<div id = 'middle_sectional_title' class = 'div_middle_sectional_title'>
+							<p class = 'font_middle_title'> Features</p>
+						</div>	
+					</div>
+					
+					<div id = 'display_main_container' class='div_display_main_container'>
+						<div id = 'right_text_container' class='div_all_text_container'>
+							
+							<!-- default form 1 -->
+							<div class="default_big_frame_for_feature">
+								<div class="default_forms_seperate_box" id="default_form1">
+									<p class= 'default_font_middle_portfolio_publication_description'>
+										<textarea rows="7" cols="83" type="text" name="form1 short content" class="forms_content_input_box" placeholder="Type your short description of the feature..."></textarea>
+									</p>
+									<!-- preview button -->
+									<button class="preview_button">Preview</button>	
+								</div>
+							
+								<!-- default form 1 Preview -->
+								<div id='default_form1_preview'>
+									<div class='div_display_main_container_preview'>
+										<div class='div_all_text_container_preview'>
+											<p class='font_middle_portfolio_publication_description_preview'></p>											
+										</div>
+									</div>
+									<button class="edit_button">Edit</button>
+								</div>
+							</div>
+							<!-- customize paragraph form 1-5 -->
+							<section class="js_feature">
+								<div class="big_frame_for_feature">
+									<nav class="changeable_form">
+										<ul>
+											<li data-link="form1" >1</li>
+											<li data-link="form2" >2</li>
+											<li class='changeable_form_hover_state' data-link="form3" >3</li>
+											<li data-link="form4" >4</li>
+											<li data-link="form5" >5</li>										
+										</ul>
+									</nav>
+								
+									<!-- form 1 -->
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									<div class="forms_seperate_box" id="form1">
+										<p class='font_middle_portfolio_publication_description'>
+											<textarea rows="10" cols="83" type="text" name="form1 short content" class="forms_content_input_box" placeholder="Type your short content..."></textarea>
+										</p>
+										<!-- preview button -->
+										<button class="preview_button">Preview</button>	
+									</div>
+									
+									<!-- Form 1 Preview -->
+									<div id='form1_preview' class='preview_main_container'>
+										<div class='div_display_main_container_preview'>
+											<div class='div_all_text_container_preview'>
+												<p class='font_middle_portfolio_publication_description_preview'></p>											
+											</div>
+										</div>
+										<button class="edit_button">Edit</button>
+									</div>
+									
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									
+									<!-- form 2 -->
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									
+									<div class="forms_seperate_box" id="form2">
+										<div id = 'div_sectional_title_container' class='div_sectional_title_container'>
+											<p class='font_sectional_title'>
+												<input type="text" name="forms title" class="forms_title_input_box" placeholder="Type your title...">
+											</p>
+										</div>
+										<div class="forms_space_between_title_and_content">
+											<p class='font_middle_portfolio_publication_description'>
+												 <textarea rows="10" cols="83" type="text" name="forms large content" class="forms_content_input_box" placeholder="Type your content..."></textarea> 
+											</p>
+										</div>
+										<!-- preview button -->
+											<button class="preview_button">Preview</button>
+											
+									</div>
+									
+									<!-- Form 2 Preview -->
+									<div id='form2_preview' class='preview_main_container'>
+										<div  class='div_display_main_container_preview'>
+											<div  class='div_all_text_container_preview'>
+												<div class='div_sectional_title_container_preview'>
+													<p class='font_sectional_title_preview'><b></b></p>
+												</div>	
+												<p class='font_middle_portfolio_publication_description_preview'></p>											
+											</div>
+										</div>
+										<button class="edit_button">Edit</button>
+									</div>
+									
+									
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									
+									
+									<!-- form 3 -->
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									<!--##########################################################################-->
+									
+									<div class="forms_seperate_box" id="form3">
+										<!-- input form: this is the one displayed when user can edit feature content -->
+										<!-- title is here -->
+										<div id = 'div_sectional_title_container' class='div_sectional_title_container'>
+											<p class='font_sectional_title'>
+												<input type="text" name="forms title" class="forms_title_input_box" placeholder="Type your title..."/>
+											</p>
+										</div>
+
+										<!-- text content and image content is here -->
+										<div id= 'display_main_container' class='div_display_main_container forms_space_between_title_and_content'>
+											<div id= 'left_sectional_text_container' class='div_left_sectional_text_container'>
+												<p class='font_middle_portfolio_publication_description'>
+													 <textarea rows="16" cols="47" type="text" name="forms large content" class="forms_content_input_box" placeholder="Type your content..."></textarea>
+												</p><br>
+											</div>
+											<div id = 'right_img_container' class='div_right_img_container'>
+												<img width='280' height='200' src='/static_media_alex/Images/createpage_project_jp_talk_2_demo.jpg'>
+											</div>
+										</div>
+										<!-- preview button -->
+										<button class="preview_button">Preview</button>										
+									</div>
+
+									<!-- Form 3 Preview -->
+									<div id='form3_preview' class='preview_main_container'>
+										<div  class='div_display_main_container_preview'>
+											<div  class='div_all_text_container_preview'>
+											
+												<div class='div_sectional_title_container_preview'>
+													<p class='font_sectional_title_preview'><b></b></p>
+												</div>
+											
+												<div class='div_display_main_container_preview'>
+													<div class='div_left_sectional_text_container_preview'>
+														<p class='font_middle_portfolio_publication_description_preview'></p>
+													</div>
+													<div class='div_right_img_container_preview'>
+														<img width='280' height='200' src=''>
+													</div>
+												</div>											
+											</div>
+										</div>
+										<button class="edit_button">Edit</button>	
+									</div>
+									
+									<!--##########################################################################-->
+									<!--##########################################################################-->										
+									<!--##########################################################################-->										
+						
+									
+									<!-- form 4 -->
+									<!--##########################################################################-->
+									<!--##########################################################################-->										
+									<!--##########################################################################-->										
+								
+									<div class="forms_seperate_box" id="form4">
+										<div id = 'div_sectional_title_container' class='div_sectional_title_container'>
+											<p class='font_sectional_title'>
+												<input type="text" name="forms title" class="forms_title_input_box" placeholder="Type your title...">
+											</p>
+										</div>
+
+										<div id= 'display_main_container' class='div_display_main_container forms_space_between_title_and_content'>
+											<p class='font_middle_portfolio_publication_description'>
+												 <textarea rows="5" cols="83" type="text" name="forms large content" class="forms_content_input_box" id="form4_content1" placeholder="Type your content..."></textarea>
+											</p>
+											<div id= 'display_main_container' class='div_display_main_container forms4_special_space_between_content1_and_2'>
+												<div id= 'left_sectional_text_container' class='div_left_sectional_text_container'>
+													<p class='font_middle_portfolio_publication_description'> 
+														<textarea rows="12" cols="47" type="text" name="forms large content" class="forms_content_input_box" id="form4_content2" placeholder="Type your content..."></textarea>
+													</p>
+												</div>
+												<div id = 'right_img_container' class='div_right_img_container'>
+													<img width='280' height='200' src='/static_media_alex/Images/createpage_project_jp_talk_2_demo.jpg'>
+												</div>
+											</div>	
+										</div>
+										<!-- preview button -->
+											<button class="preview_button">Preview</button>	
+									</div>
+									
+									<!-- Form 4 Preview -->
+									<div id='form4_preview' class='preview_main_container'>
+										<div  class='div_display_main_container_preview'>
+											<div  class='div_all_text_container_preview'>
+												<div class='div_sectional_title_container_preview'>
+													<p class='font_sectional_title_preview'><b></b></p>
+												</div>
+									
+												<div class='div_display_main_container_preview'>
+													<p class='font_middle_portfolio_publication_description_preview' id="form4_content1"> </p><br>
+													
+													<div class='div_display_main_container_preview'>
+														<div class='div_left_sectional_text_container_preview'>
+															<p class='font_middle_portfolio_publication_description_preview' id="form4_content2"></p>
+														</div>
+														<div id = 'right_img_container' class='div_right_img_container_preview'>
+															<img width='280' height='200' src=''>
+														</div>
+													</div>	
+												</div>
+											</div>
+										</div>
+										<!-- edit button -->
+										<button class="edit_button">Edit</button>
+									</div>
+									
+									<!-- ########################################################################## -->
+									<!-- ########################################################################## -->
+									<!-- ########################################################################## -->
+									<!-- ########################################################################## -->
+									
+									
+									
+									
+									
+									
+									
+									<!-- form 5 -->
+									<div class="forms_seperate_box" id="form5">
+										<div id= 'display_main_container' class='div_display_main_container'>										
+											<div id="form5_img1">
+												<div id = 'right_img_container' class='div_right_img_container' style="margin-left: 15px">
+													<img width='280' height='200' src='/static_media_alex/Images/createpage_project_jp_talk_feature_3_demo.jpg'>
+												</div>
+											</div>
+											<div id="form5_img2">
+												<div id = 'right_img_container' class='div_right_img_container' style="margin-left: 15px">
+													<img width='280' height='200' src='/static_media_alex/Images/createpage_project_jp_talk_motivation_demo.jpg'>
+												</div>
+											</div>
+										</div>
+										<!-- preview button -->
+										<button class="preview_button">Preview</button>
+									</div>
+									
+									<!-- form 5 Preview -->
+									<div id='form5_preview' class='preview_main_container'>
+										<div class='div_display_main_container_preview'>										
+											<div id="form5_img1">
+												<div class='div_right_img_container_preview' style="margin-left: 15px">
+													<img width='280' height='200' src=''>
+												</div>
+											</div>
+											<div id="form5_img2">
+												<div class='div_right_img_container_preview' style="margin-left: 15px">
+													<img width='280' height='200' src=''>
+												</div>
+											</div>
+										</div>
+										<!-- edit button -->
+										<button class="edit_button">Edit</button>
+									</div>
+									<!-- ########################################################################## -->
+									<!-- ########################################################################## -->
+									<!-- ########################################################################## -->
+									<!-- ########################################################################## -->
+																		
+								</div>
+								<!-- submit & add button -->
+								<div>
+									<button class="add_button"> Add </button>
+									<button class="submit_button"> submit </button>
+								</div>
+								
+							</section>
+							
+							
+							
+							<!-- </section> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			{% include "footer.html" %}
+		</div>
+
+		
+		<script type='text/javascript' src="/static_media_alex/JQ_Lib/jquery.js"></script>
+		<script type='text/javascript' src="/static_media_alex/JQ_Lib/jquery-ui.js"></script>
+		<script type='text/javascript' src="/static_media_alex/project/createPage.js"></script>
+		
+    </body>
+</html>
+
+	

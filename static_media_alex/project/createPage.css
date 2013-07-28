@@ -1,0 +1,877 @@
+/****
+***	Project Template Main Container
+****/
+.div_porj_tmep_main_container
+{
+	margin:auto;
+	width:800px;
+	background-color:white;
+}
+
+/* larger scope */
+.div_middle_container
+{
+	margin:auto;
+	width:90%;
+	background-color:white;
+	margin-bottom:50px;
+	border-bottom: 1px solid #C0C0C0;
+}
+
+.div_top_buffer_container
+{
+	margin:auto;
+	margin-top:5px;
+	width:90%;
+	height:10px;
+	background-color:white;
+}
+
+/*
+ *	Local Sectional Blocks Structure & Fonts
+ */
+
+.div_middle_bigblock_container /* local block scope */
+{	
+	width:100%;
+	margin-top: 5px;
+	border-bottom: 1px solid silver;	
+}
+
+.div_middle_title_container /* local block scope */
+{	
+	width:100%;
+	height:60px;
+}
+
+.font_middle_title
+{
+	margin:auto;
+	text-align: left;
+	font-size:20px;
+	line-height:200%;
+	font-family: "Arial";	
+	color:#2F6AB3;	
+	top:50%;		
+	bottom:50%;
+}
+
+/*
+ *	Attributes: Sectional Icon
+ */
+
+.div_middle_image_container
+{
+
+	width:60px;
+	height:60px;
+	float: left;
+	/*border: 1px solid red;*/
+}
+
+.div_middle_sectional_title
+{
+
+	width:50%;
+	height:40px;
+	margin-left:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+	float: left;
+	/*border: 1px solid blue;*/
+}
+
+/*
+ * Publications/Top Title 
+ */
+.font_middle_portfolio_publication_title
+{	
+	margin:auto;
+	text-align: left;
+	font-weight:bold;
+	font-size:21px;
+	line-height: 150%;
+	font-family: Arial;	
+	display:inline;
+	color:#2F6AB3;			
+/*	border: 1px solid blue;*/
+}
+
+.font_middle_portfolio_publication_description
+{
+	margin:auto;
+	font-size:14px;
+	line-height: 150%;
+	font-family: "Arial";	
+	text-align: justify;
+	color:#454545;		
+/*	border: 1px solid red;	*/
+}
+
+.font_middle_portfolio_publication_link
+{
+	font-size:14px;
+	line-height: 150%;
+	font-family: "Arial";	
+	display:inline;
+	color:#2F6AB3;			
+}
+
+.div_top_title_container
+{	
+	width:100%;
+	margin-top: 5px;
+	border-bottom: 1px solid silver;	
+/*	border: 1px solid purple;	*/
+	
+}
+
+.div_pdf_download_container
+{	
+	width:40px;
+	height:40px;
+	margin-top:1px;
+	float: right;
+}
+
+/*
+ * Display Main Container: Contain youtube,text,images
+ */
+.div_display_main_container
+{	
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+/*	border: 1px solid purple;*/
+	float: center;
+}
+
+/*
+ * Text Demonstration
+ */
+.div_left_text_container
+{	
+/*	width:250px;*/
+	margin-top:5px;
+	margin-bottom:5px;
+	/*border: 1px solid red;*/
+	float: left;
+}
+
+.div_right_text_container
+{	
+	width:58%;
+	margin-top:30px;
+	margin-bottom:5px;
+	/*border: 1px solid red;*/
+	float: right;
+}
+
+.div_all_text_container
+{	
+	width:100%;
+	margin-bottom:5px;
+	/*border: 1px solid red;*/
+	float: center;
+}
+
+.div_sectional_title_container
+{	
+	height:20px;
+	margin-bottom:2px;
+	margin-top:30px;
+/*	border: 1px solid blue;*/
+}
+
+.font_sectional_title
+{
+	margin:auto;
+	text-align: left;
+	font-weight:bold;
+	font-size:16px;
+	line-height: 100%;
+	font-family: "Arial";	
+	color:#454545;			
+}
+
+
+/*
+ * Image Demonstration
+ */
+.div_right_img_container
+{	
+	width:280px;
+	height:200px;
+	margin-top: 10px;
+	margin-right:5px;
+	margin-bottom:5px;
+	border: 3px dashed #2F6AB3;
+	float: right;
+	cursor:pointer;
+}
+
+/*
+ * Sectional Text Demonstration
+ */
+.div_left_sectional_text_container
+{	
+	width:58%;
+	margin-bottom:5px;
+	/*border: 1px solid red;*/
+	float: left;
+}
+
+.font_left_sectional_description
+{
+	margin:auto;
+	margin-top:15px;
+	text-align: justify;
+	font-size:14px;
+	line-height: 150%;
+	font-family: "Arial";	
+	color:#454545;			
+}
+
+
+/******************NEW FEATURE*********************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+/******************************************************************************************/
+
+
+
+/***Project title + author***/
+.input_portfolio_title_box
+{
+/*	border:1px solid red;*/
+	width:670px;
+	height:25px;
+	margin:auto;
+	text-align: left;
+	font-size:21px;
+	font-weight:bold;
+	font-family: Arial;	
+	display:inline;
+	color:#2F6AB3;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.input_portfolio_author_box
+{
+	width:400px;
+	height:20px;
+	margin:auto;
+	font-size:14px;
+/*	line-height: 150%;*/
+	font-family: "Arial";	
+	text-align: justify;
+	color:#454545;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+/****************************/
+/****preview_input_portfolio****/
+.preview_portfolio_title_box
+{
+/*	border:1px solid red;*/
+	width:670px;
+	height:25px;
+	margin:auto;
+	font-weight:bold;
+	text-align: left;
+	font-size:21px;
+	line-height: 150%;
+	font-family: Arial;	
+	display:inline;
+	color:#2F6AB3;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+
+.preview_portfolio_author_box
+{
+	width:400px;
+	height:20px;
+	margin:auto;
+	font-size:14px;
+	line-height: 150%;
+	font-family: "Arial";	
+	text-align: justify;
+	color:#454545;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+}
+/*******************************/
+/***Video section***/
+.video_section_box_outline
+{
+	width:720px;
+	height:450px;
+	border:1px solid #454545;
+	background:url(/static_media_alex/Images/createpage_project_jp_talk_video_demo.jpg);
+	background-size:720px 450px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+.video_header
+{
+	text-align:center;
+	margin-top:70px;
+/*	padding-right:125px;*/
+/*	padding-left:127px;*/
+}
+.video_example_url_box
+{
+	border: 4px dashed #2F6AB3;
+	width:472px;
+	height:60px;
+	margin-top:67px;
+	margin-left:121px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+}
+.video_url_input_box
+{
+	font-size:17px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+/***********************************
+*	@@@ Feature Input Form @@@
+*
+/***********************************/
+
+/*
+*	Feature Menu Buttons
+*	Hover: Will open different form box for user to input features
+*/
+.changeable_form
+{
+/*	border:1px solid red;*/
+   	height: 45px;
+   	margin-top: 5px;
+	padding-left:93px;
+   	font: bold 22px "DroidSansBold", Verdana, sans-serif;
+   	text-transform: uppercase;
+   	letter-spacing: 1px;
+}
+.changeable_form ul li
+{
+/*	border:1px solid red;*/
+	border: 2px solid #2F6AB3;
+	display: inline;
+	cursor:pointer;
+	padding:10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	padding-left:30px;
+	padding-right:30px;
+	color:#2F6AB3;
+
+}
+.changeable_form_hover_state
+{
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B2E6FF), to(#a5c6d6));
+	background: -moz-linear-gradient(top,#B2E6FF, #a5c6d6);
+}
+
+/*
+*	Form Box 1 - 5
+*	(@@@ COLLECT INPUT @@@)
+* 	Corresponds to the form menu botton above
+*/
+.big_frame_for_feature
+{
+/*	border:3px solid #2F6AB3;*/
+	height:580px;
+}
+.motivation_seperate_box
+{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:13px;
+	border:3px solid #2F6AB3;
+	margin-top:10px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+.forms_seperate_box
+{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:13px;
+	border:3px solid #2F6AB3;
+	display:none;
+	margin-top:10px;
+	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+
+.forms_content_input_box
+{
+	border:1px dashed #2F6AB3;
+	font-size:14px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.forms_title_input_box
+{
+	height:30px;
+	width:500px;
+	font-size:16px;
+	font-weight:bold;
+	border:1px dashed #2F6AB3;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.forms_space_between_title_and_content
+{
+	margin-top:20px;
+}
+.forms4_special_space_between_content1_and_2
+{
+	margin-top:10px;
+}
+
+
+/*
+*	Form Box 1 - 5 (preview display)
+*	(@@@ PREVIEW DISPLAY @@@)
+* 	Corresponds to the form menu botton above
+*/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+.preview_main_container
+{
+	display:none;
+}
+
+.div_display_main_container_preview
+{	
+	width:100%;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+	float: center;
+/*	border: 100px solid purple;	*/
+}
+
+.div_all_text_container_preview
+{	
+	width:100%;
+	margin-bottom:5px;
+	float: center;
+/*	border: 10px solid red;*/
+}
+
+
+
+
+/*
+ * Publications/Top Title 
+ */
+.font_middle_portfolio_publication_title_preview
+{
+	margin:auto;
+	text-align: left;
+	font-size:21px;
+	line-height: 150%;
+	font-family: Arial;	
+	display:inline;
+	color:#2F6AB3;			
+/*	border: 1px solid blue;*/
+}
+
+.font_middle_portfolio_publication_description_preview
+{
+	margin:auto;
+	font-size:14px;
+	line-height: 150%;
+	font-family: "Arial";	
+	text-align: justify;
+	color:#454545;		
+/*	border: 1px solid red;	*/
+}
+
+.font_middle_portfolio_publication_link_preview
+{
+	font-size:14px;
+	line-height: 150%;
+	font-family: "Arial";	
+	display:inline;
+	color:#2F6AB3;			
+}
+
+.div_top_title_container_preview
+{	
+	width:100%;
+	margin-top: 5px;
+	border-bottom: 1px solid silver;	
+/*	border: 1px solid purple;	*/
+	
+}
+
+.div_pdf_download_container_preview
+{	
+	width:40px;
+	height:40px;
+	margin-top:1px;
+	float: right;
+}
+
+/*
+ * Display Main Container: Contain youtube,text,images
+ */
+
+/*
+ * Text Demonstration
+ */
+.div_left_text_container_preview
+{	
+	width:58%;
+	margin-top:5px;
+	margin-bottom:5px;
+	/*border: 1px solid red;*/
+	float: left;
+}
+
+.div_right_text_container_preview
+{	
+	width:58%;
+	margin-top:30px;
+	margin-bottom:5px;
+	/*border: 1px solid red;*/
+	float: right;
+}
+
+
+/*
+ * Image Demonstration
+ */
+.div_right_img_container_preview
+{	
+	width:39%;
+	margin-top:5px;
+	margin-bottom:5px;
+	border: 5px solid #2F6AB3;
+	float: right;
+}
+
+/*
+ * Sectional Text Demonstration
+ */
+
+.font_left_sectional_description_preview
+{
+	margin:auto;
+	margin-top:15px;
+	text-align: justify;
+	font-size:14px;
+	line-height: 150%;
+	font-family: "Arial";	
+	color:#454545;			
+}
+.div_sectional_title_container_preview
+{	
+	height:20px;
+	margin-bottom:2px;
+	margin-top:30px;
+	/*border: 1px solid red;*/
+}
+
+.font_sectional_title_preview
+{
+	margin:auto;
+	text-align: left;
+	font-size:16px;
+	line-height: 100%;
+	font-family: "Arial";	
+	color:#454545;			
+}
+
+.div_left_sectional_text_container_preview
+{	
+	width:58%;
+	margin-bottom:5px;
+	/*border: 1px solid red;*/
+	float: left;
+}
+/************************************************************/
+/************************************************************/
+/************************************************************/
+
+
+
+/*
+*	(@@@ Feature default DISPLAY @@@)
+* 	Corresponds to the form menu botton above
+*/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+
+.default_forms_seperate_box
+{
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:13px;
+	border:3px solid #2F6AB3;
+	margin-top:10px;
+	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+#default_form1_preview
+{
+	display:none;
+}
+.default_big_frame_for_feature
+{
+/*	border:3px solid #2F6AB3;*/
+	height:250px;
+}
+/************************************************************/
+/************************************************************/
+/************************************************************/
+#motivation_preview
+{
+	display:none;
+}
+.big_frame_motivation
+{
+/*	border:3px solid #2F6AB3;*/
+	height:320px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************
+* Defulat Button Light Up
+*	We created this id, so form 3 will be selected when refresh
+**********************/
+#form3
+{
+	display:block;
+}
+
+/*********************************
+	IMPORTANT BUTTONS
+	Submit:
+	Add:
+	Preview:
+	Edit:
+*********************************/
+
+/***submit button***/
+.submit_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b8e356), color-stop(1, #a5cc52) );
+	background:-moz-linear-gradient( center top, #b8e356 5%, #a5cc52 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b8e356', endColorstr='#a5cc52');
+	background-color:#b8e356;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #83c41a;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #86ae47;
+	width:50%;
+	padding-top:12px;
+	padding-right:12px;
+}.submit_button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #a5cc52), color-stop(1, #b8e356) );
+	background:-moz-linear-gradient( center top, #a5cc52 5%, #b8e356 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5cc52', endColorstr='#b8e356');
+	background-color:#a5cc52;
+	cursor:pointer;
+}.submit_button:active {
+	position:relative;
+	top:1px;
+}
+
+/*add button*/
+.add_button {
+	width:49%;
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+	padding-top:12px;
+	padding-right:12px;
+}.add_button:hover {
+	cursor:pointer;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.add_button:active {
+	position:relative;
+	top:1px;
+}
+/***********/
+
+/*preview button*/
+.preview_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:6px 24px;
+	padding-top:11px;
+	padding-right:11px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	width:99%;
+	float: center;
+	
+}.preview_button:hover {
+	cursor:pointer;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.preview_button:active {
+	position:relative;
+	top:1px;
+}
+/*******************/
+
+/***edit button***/
+.edit_button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:6px 24px;
+	padding-top:11px;
+	padding-right:11px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+	width:99%;
+	float: center;
+	
+}.edit_button:hover {
+	cursor:pointer;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.edit_button:active {
+	position:relative;
+	top:1px;
+}
+
+/*******************/
+
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+
+
+
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/
+/************************************************************/

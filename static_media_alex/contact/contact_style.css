@@ -1,0 +1,262 @@
+
+
+/*
+ * Contact Main Container
+ */
+.div_contact_main_container
+{
+	margin-left:auto;
+	margin-bottom:auto;
+	margin-right:auto;
+	margin-top:5px;
+	width:800px;
+	background-color:white;
+}
+
+.div_middle_main
+{
+	width:100%;
+	background-color:white;
+	overflow:hidden;		
+}
+
+.div_blank_divider
+{
+	width:280px;
+	overflow:hidden;	
+	height:20px;
+	/*border: 1px solid #C0C0C0;*/
+}
+
+
+/*
+ * Picture Frame
+ */
+
+.div_picture_small_frame
+{
+	padding: 5px;
+	border-style: solid;
+	border-color:silver;
+	border-width: 1px;
+	float: left;
+	margin:3px;
+}
+
+.div_picture_big_frame
+{
+	width:240px;
+	/*border: 1px solid #C0C0C0;*/
+	margin-left:10px;
+	margin-top:10px;
+	float:left;
+}
+
+/*
+ * Basic Contact Info
+ */
+
+.div_basic_big_frame
+{
+	width:480px;
+	margin-left:10px;
+	float:right;
+	margin-top:10px;
+/*	border: 1px solid #C0C0C0;*/
+}
+
+.div_basic_title_frame
+{
+	width:100%;
+	border-bottom: 1px solid #C0C0C0;
+	margin-top:1px;
+}
+
+.font_basic_title
+{
+	margin:auto;
+	text-align: left;
+	font-size:21px;
+	line-height: 150%;
+	font-family: Arial;	
+	display:inline;
+	color:#2F6AB3;			
+}
+
+.div_basic_info_desc_frame
+{
+	width:100%;
+/*	border: 1px solid #C0C0C0;*/
+	margin-top:15px;
+}
+
+.font_basic_info_desc
+{
+	margin:auto;
+	text-align: left;
+	font-size:17px;
+	line-height: 150%;
+	font-family: "Arial";	
+	display:inline;
+	color:#454545;			
+}
+
+.font_basic_research_desc
+{
+	margin:auto;
+	text-align: justify;
+	font-size:16px;
+	line-height: 150%;
+	font-family: "Arial";	
+	display:inline;
+	color:#454545;			
+}
+
+
+/*
+	Supervisor CSS
+*/
+
+/***past supervisor title***/
+.past_supervisor_title_container
+{
+	font-size:30px;
+	width:725px;
+	margin-left:14px;
+	margin-top:20px;
+	border-bottom: 4px solid #C0C0C0;	
+}
+.supervisor_title_text
+{
+	margin:auto;
+	font-size:25px;	
+	font-family: "Arial";	
+	text-align: left;
+	line-height: 200%;
+	display:inline;
+	color:#2F6AB3;				
+}
+/**************************/
+
+/***The outter box for supervisor***/
+.div_supervisor_big_box
+{
+/*	border:1px solid red;*/
+	width:100%;
+	background-color:white;
+	overflow:hidden;	
+	border-bottom: 1px solid #C0C0C0;		
+}
+/***********************************/
+
+/***Supervisor's picture outter box***/
+.div_supervisor_picture_big_frame
+{
+	width:200px;
+	margin-left:31px;
+	margin-top:39px;
+	margin-bottom:10px;
+	float:left;	
+	/*border: 1px solid #C0C0C0;*/
+}
+/*************************************/
+
+/***General font setting for supervisor***/
+.supervisor_font
+{
+	margin:auto;
+	text-align: justify;
+	font-size:16px;
+	line-height: 150%;
+	font-family: "Arial";	
+	display:inline;
+	color:#454545;
+	/*border: 1px solid #C0C0C0;*/			
+}
+/******************************************/
+
+/***collaborate with me and date***/
+.div_collaborate_frame
+{
+	margin-top:7px;
+	margin-bottom:7px;
+}
+
+.supervisor_collaborate_start-end_date
+{
+	font-size:16px;
+	margin:auto;
+	text-align: left;
+	line-height: 150%;
+	font-family: Arial;	
+	display:inline;
+	color:#2F6AB3;
+}
+/*********************************/
+
+/***position and university***/
+.position_and_university_title
+{
+/*	border: 1px solid red;*/
+	margin-bottom:7px;
+	text-align: justify;
+	font-family: "Arial";	
+	color:#454545;
+	font-size:20px;
+}
+/*****************************/
+
+/***supervisor's email and link***/
+.supervisor_link_email_frame
+{
+/*	border: 1px solid red;*/
+	width:200px;
+	word-wrap: break-word;
+	margin-bottom:15px;
+}
+/*********************************/
+
+
+/***Famous paper organization***/
+.div_famous_paper_organize
+{
+/*	border-bottom:1px solid #454545;*/
+	text-align: justify;
+	font-size:16px;
+	margin-top:10px;
+	margin-bottom:15px;
+	margin-left:20px;
+	font-family: "Arial";	
+	color:#454545;
+}
+
+.p_famous_paper_organize
+{
+	color:#2F6AB3;
+	margin:0px;
+	line-height:100%;
+}
+
+.p_famous_paper_organize_small
+{
+	color:#454545;
+	margin:0px;
+	font-size:15px;
+}
+/******************************/
+
+/***Past sipervisor's recernt interest tag***/
+.tag_font
+{
+	margin:auto;
+	text-align: justify;
+	font-size:16px;
+	line-height: 150%;
+	font-family: "Arial";	
+	display:inline;
+	color:#454545;
+	border-radius: 3px;
+	border: 2px solid lightblue;
+	background-color:lightblue;			
+}
+/*******************************************/
