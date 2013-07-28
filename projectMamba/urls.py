@@ -1,17 +1,36 @@
 from django.conf.urls import patterns, include, url
 
-# Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+# static file
+from django.conf import settings
+
+from django.contrib import admin
+admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'projectMamba.views.home', name='home'),
     # url(r'^projectMamba/', include('projectMamba.foo.urls')),
+    
+    # admin:
+    url(r'^admin/', include(admin.site.urls)),
+    
+    #resume
+    url(r'^(?P<user_name>\w+)/resume/', include('resume.urls')),
+    
+    #contact
+    url(r'^(?P<user_name>\w+)/contact/', include('contact.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    #portfolio
+    url(r'^(?P<user_name>\w+)/projects/', include('project.urls')),
+    url(r'^(?P<user_name>\w+)$','project.views.project_ranking_page'),
+    url(r'^(?P<user_name>\w+)/$','project.views.project_ranking_page'),
+   
+    #publication
+    url(r'^(?P<user_name>\w+)/publication/$','project.views.publication_rank'),
+    url(r'^(?P<user_name>\w+)/publication/(?P<proj_title>\w+)/$','project.views.publication_link'),
 
-    # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+
+    # static files 
+    url(r'^static_media_alex/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
+    url(r'^.*/static_media_alex/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
 )
